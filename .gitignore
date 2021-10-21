@@ -1,7 +1,8 @@
 .terraform
 .terraform.lock.hcl
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+
 
 *.test.*
 *.mod
