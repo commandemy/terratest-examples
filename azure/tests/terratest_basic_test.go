@@ -27,7 +27,7 @@ func TestTerraformAzureExample(t *testing.T) {
 
 	terraform.InitAndApply(t, terraformOptions)
 
-	// Run `terraform output` to get the values of output variables
+	// Run terraform output to get the values of the output variables
 	vmName := terraform.Output(t, terraformOptions, "vm_name")
 	resourceGroupName := terraform.Output(t, terraformOptions, "resource_group_name")
 
