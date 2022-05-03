@@ -21,7 +21,7 @@ func TestTerraformHelloWorldExample(t *testing.T) {
 	// Run "terraform init" and "terraform apply". Fail the test if there are any errors.
 	terraform.InitAndApply(t, terraformOptions)
 
-	// Run `terraform output` to get the values of output variables and check they have the expected values.
+	// Run terraform output to get the values of the output variables and check if they have the expected values
 	output := terraform.Output(t, terraformOptions, "hello_world")
 	assert.Equal(t, "Hello, World!", output)
 }
